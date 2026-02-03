@@ -18,4 +18,23 @@
 ✔ Interview-focused problem solving  
 ✔ Clean & readable code  
 ✔ Ideal for **placements & competitive programming*
+## 🧠 Topics Covered
 
+- 🔢 Arrays & Strings  
+- 🔗 Linked List  
+- 📚 Stack & Queue  
+- 🔁 Recursion & Backtracking  
+- 🔍 Searching & Sorting  
+- 🌲 Trees & BST  
+- 🌐 Graph Algorithms  
+- 🧮 Dynamic Programming  
+- ⚡ Greedy Algorithms  
+- 🧠 Bit Manipulation  
+
+---
+
+## 🛠 Languages Used
+
+- 💻 **C++**
+- ☕ **Java**
+- 🐍 **Python** *(where applicable)*
