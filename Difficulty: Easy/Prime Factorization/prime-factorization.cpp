@@ -1,0 +1,13 @@
+void printPrimeFactorization(int n) {
+    for (int i = 2; i * i <= n; i++) {
+        while (n % i == 0) {
+            cout << i << " ";
+            n /= i;
+        }
+    }
+
+    // If remaining n is prime
+    if (n > 1) {
+        cout << n << " ";
+    }
+}
