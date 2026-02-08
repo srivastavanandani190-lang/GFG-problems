@@ -1,17 +1,26 @@
-// User function Template for C++
+#include <iostream>
+using namespace std;
 
-bool prime(int n) {
+int main() {
+    // code here
+    int n;
+    cin>>n;
+    if(n==1){
+        cout<<"False";
+    }
     bool flag=true;
-    if(n==1) return false;
-    // Write your code here
     for(int i=2;i<=sqrt(n);i++){
-    // returns a boolean value
-    if(n%i==0){
-        flag=false;
-        break;
+        if(n%i==0){
+            flag=false;
+            break;
+        }
     }
+    if(flag==true){
+        cout<<"True";
     }
-    if(flag==true) return true;
-    return false;
-    
+    else{
+        cout<<"False";
+    }
+
+    return 0;
 }
