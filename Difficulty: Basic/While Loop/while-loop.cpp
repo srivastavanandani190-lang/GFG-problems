@@ -1,6 +1,15 @@
-void utility(int x) {
-    // code here
-    for(int i=x;i>=0;i--){
-        cout<<i<<" ";
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    cin >> x;
+    // use while loop over x
+    // to print integers from x to 0
+     
+    while(x>=0){
+        cout<<x<<" ";
+        x--;
     }
+    return 0;
 }
