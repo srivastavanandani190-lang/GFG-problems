@@ -1,13 +1,9 @@
-#include <iostream>
-using namespace std;
+// User function Template for C++
 
-int main() {
-    // code here
-    int n;
-    cin>>n;
-    if(n>100) cout<<"Big"<<"\n";
-    else cout<<"Small"<<"\n";
-    
+void utility(int number) {
 
-    return 0;
+    // Write your if-else statement below
+     if(number>100) cout<<"Big"<<"\n";
+     else cout<<"Number"<<"\n";
+    // Write your if-else statement above
 }
