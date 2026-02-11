@@ -1,13 +1,8 @@
-#include <iostream>
-using namespace std;
+// User function Template for C++
 
-int main() {
-    // code here
-    int a,b,c;
-    cin>>a >>b >>c;
-    if(a>=b && a>=c) cout<<a;
-    else if(b>=a && b>=c) cout<<b;
-    else cout<<c;
-
-    return 0;
+int find_greatest_number(int a, int b, int c) {
+    if(a>=b && a>=c) return a;
+    else if(b>=a && b>=c) return b;
+    else return c;
+    // Write your code here..
 }
