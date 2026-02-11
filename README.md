@@ -76,15 +76,7 @@
 
 ---
 
-## 🎯 Goals
-
-- 💜 Solve GFG problems **daily**
-- 💜 Strengthen DSA fundamentals
-- 💜 Improve problem-solving skills
-- 💜 Prepare for **placements & interviews**
-
----
-
+ 
 ## 🌸 Motivation
 
 > **“Discipline today builds confidence tomorrow.”**
