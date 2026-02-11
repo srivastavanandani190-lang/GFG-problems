@@ -2,7 +2,7 @@
 <!-- 💜 GFG DSA PROBLEMS — ANIMATED VIOLET THEME README                     -->
 <!-- ===================================================================== -->
 
-<h1 align="center">🪻GFG Problems – Data Structures & Algorithms</h1>
+<h1 align="center">🪻GFG Problems</h1>
 <h3 align="center">Practice • Consistency • DSA Mastery</h3>
 
 <p align="center">
