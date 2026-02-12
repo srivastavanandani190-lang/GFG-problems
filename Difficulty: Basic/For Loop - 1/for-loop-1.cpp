@@ -1,13 +1,6 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n;
-    cin >> n;
-    // use for loop to print the
-    // multiplication table of n
-  for(int i=1;i<=10;i++){
-      cout<<i*n<<" ";
-  }
-    return 0;
+void utility(int n) {
+    // code here
+    for(int i=1;i<=10;i++){
+        cout<<i*n<<" ";
+    }
 }
