@@ -1,0 +1,5 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/print-geeksforgeeks--141629/1?page=2&category=CPP&status=unsolved,attempted&sortBy=submissions">Print GeeksForGeeks</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">You are given a <strong>print()</strong> function that outputs two statements one is "Hello World" and another "GeeksForGeeks". Comment the code that outputs "Hello World", so that only the "GeeksForGeeks"&nbsp; line&nbsp;gets printed.</span></p>
+<p><span style="font-size: 18px;"><strong>Example:</strong>&nbsp;</span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong></span><span style="font-size: 18px;">Not required for this problem.</span>
+<span style="font-size: 18px;"><strong>Output: </strong>GeeksForGeeks</span>
+</pre></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>CPP</code>&nbsp;
