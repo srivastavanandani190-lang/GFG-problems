@@ -1,6 +1,13 @@
-void utility(int number) {
-    // Write the if, else if, else statements below
-    if(number>100) cout<<"Big"<<"\n";
-    else if(number<10) cout<<"Small"<<"\n";
-    else cout<<"Number"<<"\n";
+#include <iostream>
+using namespace std;
+
+int main() {
+    // code here
+    int n;
+    cin>>n;
+    if(n>100) cout<<"Big";
+    else if(n<10) cout<<"Small";
+    else cout<<"Number";
+
+    return 0;
 }
