@@ -1,12 +1,13 @@
-// User function Template for C++
+#include <iostream>
+using namespace std;
 
-string utility(int n) {
+int main() {
+    // code here
+    int n;
+    cin>>n;
+    if(n%2==0) cout<<"Friend";
+    else cout<<"You";
+    
 
-    // write your code here
-    if(n%2==0){
-        return "Friend";
-    }
-    else{
-        return "You";
-    }
+    return 0;
 }
