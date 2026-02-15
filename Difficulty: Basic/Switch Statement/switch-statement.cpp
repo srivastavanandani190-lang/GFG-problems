@@ -1,28 +1,41 @@
-// User function Template for C++
+#include <iostream>
+using namespace std;
 
-string utility(int number) {
-
-    // write your code here
-    switch(number){
+int main() {
+    // code here
+    int a;
+    cin>>a;
+    switch(a){
     case 1:
-    return "One";
+    cout<<"One";
+    break;
     case 2:
-    return "Two";
+    cout<<"Two";
+    break;
     case 3:
-    return "Three";
+    cout<<"Three";
+    break;
     case 4:
-    return "Four";
+    cout<<"Four";
+    break;
     case 5:
-    return "Five";
+    cout<<"Five";
+    break;
     case 6:
-    return "Six";
+    cout<<"Six";
+    break;
     case 7:
-    return "Seven";
+    cout<<"Seven";
+    break;
     case 8:
-    return "Eight";
+    cout<<"Eight";
+    break;
     case 9:
-    return "Nine";
+    cout<<"Nine";
+    break;
     default:
-    return "Unknown";
-    }
+    cout<<"Unknown";
+    // using switch statement
+}
+    return 0;
 }
