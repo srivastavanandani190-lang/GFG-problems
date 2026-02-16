@@ -1,16 +1,12 @@
-#include <iostream>
-using namespace std;
+// User function Template for C++
 
-int main() {
-    // code here
-    int n;
-    cin>>n;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
+void squareWall(int s) {
+
+    // Write your code here
+    for(int i=0;i<s;i++){
+        for(int j=0;j<s;j++){
             cout<<"*"<<" ";
         }
         cout<<"\n";
     }
-
-    return 0;
 }
