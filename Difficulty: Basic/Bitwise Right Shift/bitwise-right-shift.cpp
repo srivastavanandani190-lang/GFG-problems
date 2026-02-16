@@ -1,8 +1,12 @@
-void rightShift(int a, int b) {
+#include <iostream>
+using namespace std;
 
-    // just complete below statement
-    int ans =a>>b;
+int main() {
+    int a, b;
+    cin >> a >> b;
 
-        // print the result
-        cout << ans << endl;
+    // perform right shift here
+    int res=a>>b;
+    cout<<res;
+    return 0;
 }
