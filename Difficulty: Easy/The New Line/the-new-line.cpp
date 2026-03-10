@@ -1,10 +1,9 @@
-#include <iostream>
-using namespace std;
+// Function to print each word in new line
+void printNewLine() {
 
-int main() {
-    // print Geeks for Geeks in seperate line
+    // Your code here
     cout<<"Geeks"<<"\n";
     cout<<"for"<<"\n";
     cout<<"Geeks"<<"\n";
-    return 0;
+    
 }
