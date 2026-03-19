@@ -1,32 +1,18 @@
 class Solution {
-  public:
+public:
     int SumofMiddleElements(vector<int> &arr1, vector<int> &arr2) {
-        int n = arr1.size();
-        int i = 0, j = 0;
-        int count = 0;
-        
-        int m1 = -1, m2 = -1;
+        vector<int> v;
 
-        while (count <= n) {
-            if (i == n) {
-                m1 = m2;
-                m2 = arr2[j++];
-            }
-            else if (j == n) {
-                m1 = m2;
-                m2 = arr1[i++];
-            }
-            else if (arr1[i] <= arr2[j]) {
-                m1 = m2;
-                m2 = arr1[i++];
-            }
-            else {
-                m1 = m2;
-                m2 = arr2[j++];
-            }
-            count++;
-        }
+        // merge both arrays
+        v.insert(v.end(), arr1.begin(), arr1.end());
+        v.insert(v.end(), arr2.begin(), arr2.end());
 
-        return m1 + m2;
+        // sort the merged array
+        sort(v.begin(), v.end());
+
+        int n = arr1.size(); // both arrays same size
+
+        // middle elements
+        return v[n - 1] + v[n];
     }
 };
