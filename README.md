@@ -21,7 +21,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/GeeksforGeeks-DSA-8B5CF6?style=for-the-badge&logo=geeksforgeeks&logoColor=white&labelColor=0D1117" />
-  <img src="https://img.shields.io/badge/Languages-C++%20%7C%20Java%20%7C%20Python-A78BFA?style=for-the-badge&labelColor=0D1117" />
+  <img src="https://img.shields.io/badge/Languages-C++%20%7C%20Java%20%7C%20Python-22C55E?style=for-the-badge&labelColor=0D1117" />
   <img src="https://img.shields.io/badge/Practice-Consistent-22C55E?style=for-the-badge&labelColor=0D1117" />
   <img src="https://img.shields.io/badge/Contributions-Welcome-7C3AED?style=for-the-badge&labelColor=0D1117" />
 </p>
