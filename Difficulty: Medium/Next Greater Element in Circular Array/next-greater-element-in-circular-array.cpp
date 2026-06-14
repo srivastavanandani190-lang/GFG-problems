@@ -1,21 +1,32 @@
 class Solution {
 public:
     vector<int> nextGreater(vector<int> &arr) {
-        int n = arr.size();
-        vector<int> res(n, -1);
-        stack<int> st;
+        // int n = arr.size();
+        // vector<int> res(n, -1);
+        // stack<int> st;
 
-        for(int i = 2*n - 1; i >= 0; i--) {
-            while(!st.empty() && st.top() <= arr[i % n]) {
-                st.pop();
-            }
+        // for(int i = 2*n - 1; i >= 0; i--) {
+        //     while(!st.empty() && st.top() <= arr[i % n]) {
+        //         st.pop();
+        //     }
 
-            if(i < n) {
-                if(!st.empty()) res[i] = st.top();
-            }
+        //     if(i < n) {
+        //         if(!st.empty()) res[i] = st.top();
+        //     }
 
-            st.push(arr[i % n]);
-        }
-        return res;
+        //     st.push(arr[i % n]);
+        // }
+        // return res;
+         int n = arr.size();
+        vector<int> ans(n, -1);
+         stack<int>st;
+         for(int i=0;i<2*n-1;i++){
+             while(!st.empty() && arr[st.top()]<arr[i%n]){
+                 ans[st.top()]=arr[i%n];
+                 st.pop();
+             }
+             st.push(i%n);
+         }
+        return ans;
     }
 };
