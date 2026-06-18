@@ -12,16 +12,18 @@ public:
 
     // Push into stack 1
     void push1(int x) {
-        if (top1 + 1 < top2) {
-            arr[++top1] = x;
+        if (top1 + 1 == top2) {
+            return ;
         }
+        arr[++top1] = x;
     }
 
     // Push into stack 2
     void push2(int x) {
-        if (top1 + 1 < top2) {
-            arr[--top2] = x;
+        if (top2-1==top1) {
+     return;
         }
+    arr[--top2] = x;
     }
 
     // Pop from stack 1
