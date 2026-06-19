@@ -1,15 +1,12 @@
 class Solution {
-  public:
+public:
     bool isPowerofTwo(int n) {
-        // code here
-       
-    if (n == 0) return false;
+        if (n <= 0) return false;
 
-    while (n % 2 == 0) {
-        n = n / 2;
+        while (n % 2 == 0) {
+            n /= 2;
+        }
+
+        return n == 1;
     }
-
-    return n == 1;
-}
-    
 };
