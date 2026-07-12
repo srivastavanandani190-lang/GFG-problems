@@ -15,18 +15,21 @@ class Node {
 
 class Solution {
   public:
+   void Postorder(Node* root,vector<int>&ans){
+      if(root==NULL){
+          return;
+      }
+    
+      Postorder(root->left,ans);
+      Postorder(root->right,ans);
+        ans.push_back(root->data);
+       
+   }
+  
     vector<int> postOrder(Node* root) {
-        // code here
-        if(root == NULL){
-            return {};
-        }
-
-        vector<int> left = postOrder(root->left);
-        vector<int> right = postOrder(root->right);
-
-        left.insert(left.end(), right.begin(), right.end());
-        left.push_back(root->data);
-
-        return left;
+       // code here
+        vector<int>ans;
+        Postorder(root,ans);
+        return ans;
     }
 };
