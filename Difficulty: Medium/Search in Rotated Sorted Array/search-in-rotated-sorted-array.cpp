@@ -6,7 +6,6 @@ class Solution {
         for(int i=0;i<arr.size();i++){
             if(arr[i]==key){
                 index=i;
-                return  index;
             }
         }
         return index;
