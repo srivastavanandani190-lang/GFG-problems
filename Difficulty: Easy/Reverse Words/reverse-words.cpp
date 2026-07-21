@@ -1,35 +1,33 @@
 class Solution {
-  public:
+public:
     string reverseWords(string &s) {
-        vector<string> words;
-        string temp = "";
+        deque<string> ans;
+        string word = "";
 
-        // Step 1: extract words
-        for(char c : s) {
-            if(c == '.') {
-                if(!temp.empty()) {
-                    words.push_back(temp);
-                    temp.clear();
-                }
-            } else {
-                temp += c;
+        // Extract words separated by '.'
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] != '.') {
+                word += s[i];
+            } else if (!word.empty()) {
+                ans.push_front(word); // Push to front to reverse order
+                word = "";
             }
         }
 
-        if(!temp.empty())
-            words.push_back(temp);
-
-        // Step 2: reverse words
-        reverse(words.begin(), words.end());
-
-        // Step 3: join with single dot
-        string ans = "";
-        for(int i = 0; i < words.size(); i++) {
-            ans += words[i];
-            if(i != words.size() - 1)
-                ans += '.';
+        // Push the final word if present
+        if (!word.empty()) {
+            ans.push_front(word);
         }
 
-        return ans;
+        // Reconstruct the result with '.' as separator
+        string result = "";
+        for (int i = 0; i < ans.size(); i++) {
+            result += ans[i];
+            if (i < ans.size() - 1) {
+                result += ".";
+            }
+        }
+
+        return result;
     }
 };
