@@ -4,7 +4,7 @@ class Solution {
     string reverseString(string& s) {
         // code here
         int start=0;
-        int end=s.size()-1;
+        int end=s.length()-1;
         while(start<=end){
             swap(s[start],s[end]);
             start++;
