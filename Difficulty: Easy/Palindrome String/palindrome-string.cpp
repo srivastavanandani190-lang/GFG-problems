@@ -1,16 +1,25 @@
 class Solution {
   public:
+  bool check(string &st,int start,int end){
+    if(start>=end){
+        return 1;
+    }
+    if(st[start]!=st[end]){
+        return 0;
+    }
+    return check(st,start+1,end-1);
+}
     bool isPalindrome(string& s) {
-        int st = 0;
-        int e = s.size() - 1;
-
-        while (st < e) {
-            if (s[st] != s[e]) {
-                return false;
-            }
-            st++;
-            e--;
+        // code here
+        string st="";
+        for(char c:s){
+         if(isalnum(c)){
+            st+=tolower(c);
+         }
         }
-        return true;
+        int start=0;
+        int end=st.size()-1;
+  
+       return check(st,start,end);
     }
 };
