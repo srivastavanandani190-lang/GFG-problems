@@ -1,13 +1,9 @@
-
 class Solution {
   public:
-    int search(int k, vector<int>& arr) {
-        // code here
-          for(int i=0;i<arr.size();i++){
-            if(arr[i]==k){
-                return i+1;
-               
-                
+    int search(vector<int>& arr, int x) {
+        for (int i = 0; i < arr.size(); i++) {
+            if (arr[i] == x) {
+                return i; // Return 0-based index
             }
         }
         return -1;
