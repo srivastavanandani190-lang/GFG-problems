@@ -10,10 +10,12 @@ public:
             }
         }
 
-        // Step 2: Reverse columns
-        for (int i = 0; i < n / 2; i++) {
-            for (int j = 0; j < n; j++) {
-                swap(mat[i][j], mat[n - i - 1][j]);
+        for(int j=0;j<n;j++){
+            int s=0,e=n-1;
+            while(s<e){
+                swap(mat[s][j],mat[e][j]);
+                s++;
+                e--;
             }
         }
     }
